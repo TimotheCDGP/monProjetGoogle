@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+/* Permet de formater toute la marge de la page avec "*" désignant "tout"  */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* Attention px pour PIXEL et vh pour VIEW HIGHT */
+/* Ici on formate le header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+/* Ici on formate nos liens (a)*/
+.header a {
+    margin-right: 20px;
+    color:#000000DE;
+    font-size: 15px;
+    text-decoration: inherit;
+}
+/* "a" pour nos liens dans le header , hover pour quand on "survolera" nos liens avec la souris et "underline" en attribut pour ajouter un effet de surlignage
+lors du passage de la souris sur le lien*/
+.header a:hover {
+    text-decoration: underline;
+}
+
+.header_droit {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+.header_droit .icone {
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* mon body */
+
+.main {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.main img {
+    object-fit: contain;
+    height: 100px;
+}
+/* l'entrée/input dans la barre de recherche */
+.entree {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+}
+
+.entree input {
+    flex:1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+/* Couleurs de la loupe et du microphone */
+.outils {
+    color:gray;
+}
+
+/* paramètres des boutons "Recherche Google" + "J'ai de la chance" */
+.boutons_de_recherche {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.boutons_de_recherche button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* paramètres du bouton de connexion GMAIL */
+.bouton_connexion {
+    display: flex;
+    margin-left: 10px;
+}
+.bouton_connexion button {
+    background-color: #1A73E8;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: rgb(230, 228, 228);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:25px;
+    height: 40px;
+}
+/* gère les paramètres des liens du footer */
+.footlinks a {
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    color:rgb(75, 75, 75);
+    font-size: 15px;
+    text-decoration: inherit
+}
+/* En cas de survol des liens du footer avec la souris, les surligner */
+.footer a:hover {
+    text-decoration: underline;
+}
+
